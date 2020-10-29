@@ -1,7 +1,7 @@
 {
-  "name": "lens-hello-world",
+  "name": "lens-helloworld-sample",
   "version": "0.0.1",
-  "description": "Lens hello-world",
+  "description": "Lens helloworld-sample",
   "main": "dist/main.js",
   "renderer": "dist/renderer.js",
   "scripts": {

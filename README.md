@@ -22,7 +22,7 @@ To install one of the samples follow the below instructions:
 ```sh
 git clone https://github.com/lensapp/lens-extension-samples
 mkdir -p ~/.k8slens/extensions
-cp -pr ./lens-extensions-samples/<sample folder> ~/.k8slens/extensions/
+cp -pr ./lens-extension-samples/<sample folder> ~/.k8slens/extensions/
 cd ~/.k8slens/extensions/<sample folder>
 npm install
 npm run build
