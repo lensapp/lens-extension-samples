@@ -8,13 +8,13 @@ const workspaceStore = Store.workspaceStore
 
 export default class MinikubeExtension extends LensMainExtension {
 
-  async onActivate() {
+  async onActivate(): Promise<void> {
     console.log("minikube extension activated")
 
     this.syncMinikube()
   }
 
-  async syncMinikube() {
+  async syncMinikube(): Promise<void> {
     const workspace = this.ensureWorkspace()
 
     const kc = new KubeConfig()
@@ -68,7 +68,7 @@ export default class MinikubeExtension extends LensMainExtension {
     return workspace
   }
 
-  findClusterById(id: string) {
-    return clusterStore.clustersList.find((c) => c.ownerRef === "minikube" && c.contextName === "minikube")
+  findClusterById(id: string): Store.Cluster {
+    return clusterStore.clustersList.find((c) => c.ownerRef === id && c.contextName === id)
   }
 }
