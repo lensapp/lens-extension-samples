@@ -1,7 +1,18 @@
 {
-  "name": "lens-minikube",
+  "name": "@k8slens/lens-minikube",
   "version": "0.1.0",
-  "description": "Lens minikube",
+  "author": "Mirantis, Inc <info@k8slens.dev> (https://k8slens.dev)",
+  "maintainers": [
+    {
+      "name": "jakolehm",
+      "email": "jari.kolehmainen@gmail.com"
+    },
+    {
+      "name": "k8slens-bot",
+      "email": "info@k8slens.dev"
+    }
+  ],
+  "description": "Lens extension for minikube",
   "main": "dist/main.js",
   "lens": {
     "metadata": {},
@@ -24,5 +35,17 @@
     "webpack-cli": "^3.3.11",
     "mobx": "^5.15.5",
     "react": "^16.13.1"
-  }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/lensapp/lens-extension-samples",
+  "bugs": {
+    "url": "https://github.com/lensapp/lens-extension-samples/issues"
+  },
+  "keywords": [
+    "extension",
+    "k8slens",
+    "lens",
+    "minikube",
+    "mirantis"
+  ]
 }

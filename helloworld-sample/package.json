@@ -1,7 +1,18 @@
 {
-  "name": "lens-helloworld-sample",
+  "name": "@k8slens/helloworld-sample",
   "version": "0.0.1",
-  "description": "Lens helloworld-sample",
+  "author": "Mirantis, Inc <info@k8slens.dev> (https://k8slens.dev)",
+  "maintainers": [
+    {
+      "name": "naveenbanala",
+      "email": "naveenbanala93@gmail.com"
+    },
+    {
+      "name": "k8slens-bot",
+      "email": "info@k8slens.dev"
+    }
+  ],
+  "description": "Lens extension Hello World sample",
   "main": "dist/main.js",
   "renderer": "dist/renderer.js",
   "scripts": {
@@ -19,5 +30,18 @@
     "@types/node": "^12.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/lensapp/lens-extension-samples",
+  "bugs": {
+    "url": "https://github.com/lensapp/lens-extension-samples/issues"
+  },
+  "keywords": [
+    "example",
+    "extension",
+    "k8slens",
+    "lens",
+    "mirantis",
+    "tutorial"
+  ]
 }
