@@ -13,6 +13,11 @@
     }
   ],
   "description": "Lens extension Hello World sample",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/lensapp/lens-extension-samples.git",
+    "directory": "helloworld-sample"
+  },
   "main": "dist/main.js",
   "renderer": "dist/renderer.js",
   "scripts": {

@@ -13,6 +13,11 @@
     }
   ],
   "description": "Lens extension for minikube",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/lensapp/lens-extension-samples.git",
+    "directory": "minikube-sample"
+  },
   "main": "dist/main.js",
   "lens": {
     "metadata": {},
