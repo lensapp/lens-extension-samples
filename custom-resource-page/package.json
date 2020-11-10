@@ -1,7 +1,7 @@
 {
   "name": "lens-crd-sample",
   "version": "0.1.0",
-  "description": "Lens pod status",
+  "description": "Lens Custom Resource page",
   "renderer": "dist/renderer.js",
   "lens": {
     "metadata": {},

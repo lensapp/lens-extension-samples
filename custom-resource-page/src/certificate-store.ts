@@ -3,13 +3,13 @@ import { Certificate } from "./certificate";
 
 export class CertifcatesApi extends K8sApi.KubeApi<Certificate> {
 }
-export const certificateApi = new CertifcatesApi({
+export const certificatesApi = new CertifcatesApi({
   objectConstructor: Certificate
 });
 
-export class CertificateStore extends K8sApi.KubeObjectStore<Certificate> {
-  api = certificateApi
+export class CertificatesStore extends K8sApi.KubeObjectStore<Certificate> {
+  api = certificatesApi
 }
 
-export const certificateStore = new CertificateStore();
-K8sApi.apiManager.registerStore(certificateStore);
+export const certificatesStore = new CertificatesStore();
+K8sApi.apiManager.registerStore(certificatesStore);

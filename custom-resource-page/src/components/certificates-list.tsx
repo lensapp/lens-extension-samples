@@ -1,6 +1,6 @@
 import { Component, K8sApi, LensRendererExtension } from "@k8slens/extensions";
 import React from "react";
-import { certificateStore } from "../certificate-store";
+import { certificatesStore } from "../certificate-store";
 import { Certificate } from "../certificate"
 
 enum sortBy {
@@ -12,13 +12,13 @@ enum sortBy {
 export class CertificatePage extends React.Component<{ extension: LensRendererExtension }> {
 
   async componentDidMount() {
-    await certificateStore.loadAll()
+    await certificatesStore.loadAll()
   }
 
   render() {
     return (
       <Component.KubeObjectListLayout
-        className="Certicates" store={certificateStore}
+        className="Certicates" store={certificatesStore}
         sortingCallbacks={{
           [sortBy.name]: (certificate: Certificate) => certificate.getName(),
           [sortBy.namespace]: (certificate: Certificate) => certificate.metadata.namespace,
