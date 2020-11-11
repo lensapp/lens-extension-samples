@@ -27,6 +27,13 @@ npm install
 npm run build
 ```
 
+If you want to watch for any source code changes and automatically rebuild the extension you can use:
+
+```sh
+cd lens-extension-samples/minikube-sample
+npm run dev
+```
+
 ## Test
 
 Open Lens application and navigate to a cluster. You should see "Hello World" in a menu.
