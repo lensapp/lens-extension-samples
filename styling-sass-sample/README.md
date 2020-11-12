@@ -1,6 +1,6 @@
 # Lens "Styling with Sass" Sample Extension
 
-Simple Lens extension that modifies basic ["Hello World"](../helloworld-sample) one by using Sass styles.
+Simple Lens extension that modifies basic ["Hello World"](../helloworld-sample) sample by using Sass styles.
 
 [Sass](https://github.com/sass/sass) is an superset of CSS with ability to add nesting rules, variables, mixins, conditions and much more. It is one of the ways for styling your Lens extensions.
 
