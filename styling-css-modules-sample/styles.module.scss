@@ -1,11 +1,13 @@
-.SassStylingExtension {
+.HelloWorld {
+  background-color: var(--layoutBackground);
+  padding: calc(var(--padding) * 2);
+
   .doodle-style {
     width: 200px;
     background-color: cadetblue;
-    padding: calc(var(--padding) * 2);
 
     // Check if light theme enabled in Lens
-    .theme-light & {
+    :global(.theme-light) & {
       background-color: cornsilk;
     }
   }
