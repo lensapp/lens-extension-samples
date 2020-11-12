@@ -1,6 +1,9 @@
 # Lens "Hello World" Sample Extension
 
-Simple Lens extension that adds "Hello World" page to a cluster menu.
+Simple Lens extension that adds following features:
+
+* "Hello World" page to a cluster menu.
+* "Hello World" information to a pod details.
 
 ## Install
 
