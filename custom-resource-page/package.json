@@ -1,7 +1,23 @@
 {
-  "name": "lens-crd-sample",
+  "name": "@k8slens/lens-crd-example",
   "version": "0.1.0",
+  "author": "Mirantis, Inc <info@k8slens.dev> (https://k8slens.dev)",
+  "maintainers": [
+    {
+      "name": "nevalla",
+      "email": "lauri.nevala@gmail.com"
+    },
+    {
+      "name": "k8slens-bot",
+      "email": "info@k8slens.dev"
+    }
+  ],
   "description": "Lens Custom Resource page",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lensapp/lens-extension-samples.git",
+    "directory": "custom-resource-page"
+  },
   "renderer": "dist/renderer.js",
   "lens": {
     "metadata": {},
@@ -15,7 +31,7 @@
   "devDependencies": {
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
-    "@k8slens/extensions": "^4.0.0-alpha.3",
+    "@k8slens/extensions": "^4.0.0-alpha.5",
     "@types/node": "^12.18.3",
     "@types/react": "^16.9.35",
     "mobx": "^5.15.5",
