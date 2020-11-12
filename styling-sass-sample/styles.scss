@@ -1,0 +1,17 @@
+.SassStylingExtension {
+  .doodle-style {
+    width: 200px;
+    background-color: cadetblue;
+
+    // Check if light theme enabled in Lens
+    .theme-light & {
+      background-color: cornsilk;
+    }
+  }
+
+  p {
+    // CSS variables listed in theme files such as src/renderer/themes/lens-light.json
+    // in Lens repository https://github.com/lensapp/lens
+    color: var(--blue);
+  }
+}
