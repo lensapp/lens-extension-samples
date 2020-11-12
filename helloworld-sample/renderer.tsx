@@ -1,6 +1,6 @@
-import { LensRendererExtension } from "@k8slens/extensions";
+import { LensRendererExtension, Component, K8sApi } from "@k8slens/extensions";
 import { ExampleIcon, ExamplePage } from "./src/example-page"
-import { PodDetails } from "./src/pod-details"
+import { ExamplePodDetails } from "./src/example-pod-details"
 import React from "react"
 
 export default class ExampleExtension extends LensRendererExtension {
@@ -21,7 +21,7 @@ export default class ExampleExtension extends LensRendererExtension {
       apiVersions: ["v1"],
       priority: 10,
       components: {
-        Details: (props: any) => <PodDetails pod={props.object} />
+        Details: (props: Component.KubeObjectDetailsProps<K8sApi.Pod>) => <ExamplePodDetails {...props} />
       }
     }
   ]
