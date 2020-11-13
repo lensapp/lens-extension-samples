@@ -30,6 +30,11 @@ npm run build
 
 The extension will now be built. If Lens is already open then you can reload it to pick up the newly installed extension.
 
+To quickly build all of the samples within `/lens-extension-samples` run:
+```
+make build
+```
+
 ## Getting Started
 
 * [Hello World Sample](helloworld-sample): The Hello World sample for Lens. See [Extension Anatomy](https://docs.k8slens.dev/extensions/get-started/anatomy/) documentation.
