@@ -5,11 +5,20 @@ import { ExampleIcon, ExamplePage } from "./page";
 export default class EmotionStylingExtension extends LensRendererExtension {
   clusterPages = [
     {
-      path: "/emotion-styling-sample",
-      title: "Styling with Emotion",
+      id: "emotion-styling-sample",
       components: {
         Page: () => <ExamplePage extension={this}/>,
-        MenuIcon: ExampleIcon,
+      }
+    }
+  ]
+
+  clusterPageMenus = [
+    {
+      id: this.clusterPages[0].id, // must be the same as in page registration to be visible in sidebar
+      url: `/${this.clusterPages[0].id}`,
+      title: "Styling with Emotion",
+      components: {
+        Icon: ExampleIcon
       }
     }
   ]
