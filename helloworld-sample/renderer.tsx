@@ -35,6 +35,6 @@ export default class ExampleExtension extends LensRendererExtension {
   ]
 
   async onActivate() {
-    console.log("hello")
+    console.log("hello world")
   }
 }
