@@ -1,4 +1,6 @@
 .SassStylingExtension {
+  padding: calc(var(--padding) * 2);
+
   .doodle-style {
     width: 200px;
     background-color: cadetblue;

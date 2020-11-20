@@ -14,11 +14,10 @@ export default class SassStylingExtension extends LensRendererExtension {
 
   clusterPageMenus = [
     {
-      id: this.clusterPages[0].id, // must be the same as in page registration to be visible in sidebar
-      url: `/${this.clusterPages[0].id}`,
+      target: { pageId: "sass-styling-sample" },
       title: "Styling with Sass",
       components: {
-        Icon: ExampleIcon
+        Icon: ExampleIcon,
       }
     }
   ]
