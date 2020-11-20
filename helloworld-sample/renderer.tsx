@@ -6,7 +6,7 @@ import React from "react"
 export default class ExampleExtension extends LensRendererExtension {
   clusterPages = [
     {
-      id: "extension-example",
+      id: "hello", // hello-world:foo
       components: {
         Page: () => <ExamplePage extension={this}/>,
       }
@@ -15,11 +15,10 @@ export default class ExampleExtension extends LensRendererExtension {
 
   clusterPageMenus = [
     {
-      id: this.clusterPages[0].id, // must be the same as in page registration to be visible in sidebar
-      url: `/${this.clusterPages[0].id}`,
+      target: { pageId: "hello" },
       title: "Hello World",
       components: {
-        Icon: ExampleIcon
+        Icon: ExampleIcon,
       }
     }
   ]
@@ -34,4 +33,8 @@ export default class ExampleExtension extends LensRendererExtension {
       }
     }
   ]
+
+  async onActivate() {
+    console.log("hello world")
+  }
 }
