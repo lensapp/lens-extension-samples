@@ -8,10 +8,33 @@ const workspaceStore = Store.workspaceStore
 
 export default class MinikubeExtension extends LensMainExtension {
 
+  syncTimer: NodeJS.Timeout
+
   async onActivate(): Promise<void> {
     console.log("minikube extension activated")
 
     this.syncMinikube()
+  }
+
+  async onDeactivate(): Promise<void> {
+    console.log("minikube extension deactivated")
+
+    if (this.syncTimer) {
+      clearTimeout(this.syncTimer);
+    }
+
+    const workspace = workspaceStore.getByName("minikube");
+    if (!workspace) {
+      return;
+    }
+
+    if (workspaceStore.currentWorkspaceId === workspace.id) {
+      workspaceStore.setActive(workspaceStore.enabledWorkspacesList[0].id);
+    }
+
+    workspace.enabled = false
+    const clusters = clusterStore.getByWorkspaceId(workspace.id);
+    clusters.forEach(cluster => cluster.enabled = false);
   }
 
   async syncMinikube(): Promise<void> {
@@ -31,7 +54,7 @@ export default class MinikubeExtension extends LensMainExtension {
       }
     }
 
-    setTimeout(() => {
+    this.syncTimer = setTimeout(() => {
       this.syncMinikube()
     }, 5000)
   }
