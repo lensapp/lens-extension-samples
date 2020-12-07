@@ -11,10 +11,6 @@ enum sortBy {
 
 export class CertificatePage extends React.Component<{ extension: LensRendererExtension }> {
 
-  async componentDidMount() {
-    await certificatesStore.loadAll()
-  }
-
   render() {
     return (
       <Component.TabLayout>
