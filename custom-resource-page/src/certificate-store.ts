@@ -1,9 +1,9 @@
 import { K8sApi} from "@k8slens/extensions";
 import { Certificate } from "./certificate";
 
-export class CertifcatesApi extends K8sApi.KubeApi<Certificate> {
+export class CertificatesApi extends K8sApi.KubeApi<Certificate> {
 }
-export const certificatesApi = new CertifcatesApi({
+export const certificatesApi = new CertificatesApi({
   objectConstructor: Certificate
 });
 
