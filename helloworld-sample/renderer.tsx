@@ -1,12 +1,22 @@
 import { LensRendererExtension, Component, K8sApi } from "@k8slens/extensions";
-import { ExampleIcon, ExamplePage } from "./src/example-page"
-import { ExamplePodDetails } from "./src/example-pod-details"
-import React from "react"
+import { ExampleIcon, ExamplePage } from "./src/example-page";
+import { ExampleGlobalPage } from "./src/example-global-page";
+import { ExamplePodDetails } from "./src/example-pod-details";
+import React from "react";
 
 export default class ExampleExtension extends LensRendererExtension {
+  globalPages = [
+    {
+      id: "hello",
+      components: {
+        Page: () => <ExampleGlobalPage extension={this}/>,
+      }
+    }
+  ]
+
   clusterPages = [
     {
-      id: "hello", // hello-world:foo
+      id: "hello",
       components: {
         Page: () => <ExamplePage extension={this}/>,
       }
@@ -31,6 +41,16 @@ export default class ExampleExtension extends LensRendererExtension {
       components: {
         Details: (props: Component.KubeObjectDetailsProps<K8sApi.Pod>) => <ExamplePodDetails {...props} />
       }
+    }
+  ]
+
+  statusBarItems = [
+    {
+      item: (
+        <div className="flex align-center gaps" onClick={() => this.navigate("hello") } >
+          <Component.Icon material="campaign" interactive /> Hello World!
+        </div>
+      )
     }
   ]
 
