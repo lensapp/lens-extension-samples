@@ -23,17 +23,18 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "npm run clean && webpack",
-    "clean": "rm -rf ./dist"
+    "clean": "del-cli -f ./dist"
   },
   "dependencies": {
     "react-open-doodles": "^1.0.5"
   },
   "devDependencies": {
     "@k8slens/extensions": "^4.0.0-beta.3",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.35",
+    "del-cli": "^3.0.1",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
-    "@types/react": "^16.9.35",
-    "@types/node": "^12.0.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.11"
   },
