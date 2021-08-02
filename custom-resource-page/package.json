@@ -18,6 +18,9 @@
     "url": "https://github.com/lensapp/lens-extension-samples.git",
     "directory": "custom-resource-page"
   },
+  "engines": {
+    "lens": "^5.0.0"
+  },
   "renderer": "dist/renderer.js",
   "lens": {
     "metadata": {},
@@ -31,10 +34,10 @@
   "devDependencies": {
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
-    "@k8slens/extensions": "^4.0.0-rc.2",
+    "@k8slens/extensions": "^5.0.0",
     "@types/node": "^12.18.3",
     "@types/react": "^16.9.35",
-    "mobx": "^5.15.5",
+    "mobx": "^6.3.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.1.1"
   }

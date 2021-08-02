@@ -1,14 +1,14 @@
-import { Component, LensRendererExtension } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import React from "react";
 import { CertificateDetails, CertificateDetailsProps } from "./src/components/certificate-details";
 import { CertificatePage } from "./src/components/certificate-page";
 import { Certificate} from "./src/certificate"
 
-export function CertificateIcon(props: Component.IconProps) {
-  return <Component.Icon {...props} material="security" tooltip="Certificates"/>
+export function CertificateIcon(props: Renderer.Component.IconProps) {
+  return <Renderer.Component.Icon {...props} material="security" tooltip="Certificates"/>
 }
 
-export default class CrdSampleExtension extends LensRendererExtension {
+export default class CrdSampleExtension extends Renderer.LensExtension {
   clusterPages = [{
     id: "certificates",
     components: {

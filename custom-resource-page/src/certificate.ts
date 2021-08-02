@@ -1,6 +1,6 @@
-import { K8sApi} from "@k8slens/extensions";
+import { Renderer} from "@k8slens/extensions";
 
-export class Certificate extends K8sApi.KubeObject {
+export class Certificate extends Renderer.K8sApi.KubeObject {
   static kind = "Certificate"
   static namespaced = true
   static apiBase = "/apis/cert-manager.io/v1alpha2/certificates"
