@@ -32,11 +32,15 @@ The extension will now be built. If Lens is already open then you can reload it 
 
 ## Getting Started
 
-* [Hello World Sample](helloworld-sample): The Hello World sample for Lens. See [Extension Anatomy](https://docs.k8slens.dev/extensions/get-started/anatomy/) documentation.
+* [Hello World Sample](helloworld-sample): The Hello World sample for Lens. See [Extension Anatomy](https://api-docs.k8slens.dev/latest/extensions/get-started/anatomy/) documentation.
 
 ## Samples
 
 <!-- SAMPLES_BEGIN -->
 | Sample | Guide on Lens Documentation Website |
 | ------ | ----- |
-| [Hello World Sample](helloworld-sample) | [LensRendererExtension](https://docs.k8slens.dev/extensions/guides/renderer-extension/)  
+| [Hello World Sample](helloworld-sample) | [Renderer Extension](https://api-docs.k8slens.dev/latest/extensions/guides/renderer-extension/)  
+| [Custom Resource Page Sample](custom-resource-page) | [Stores](https://api-docs.k8slens.dev/latest/extensions/guides/stores/)  
+| [Styling CSS Modules](styling-css-modules-sample) | [Renderer Extension](https://api-docs.k8slens.dev/latest/extensions/guides/renderer-extension/)  
+| [Styling Emotion](styling-emotion-sample) | [Renderer Extension](https://api-docs.k8slens.dev/latest/extensions/guides/renderer-extension/)  
+| [Styling SASS](styling-sass-sample) | [Renderer Extension](https://api-docs.k8slens.dev/latest/extensions/guides/renderer-extension/)  
