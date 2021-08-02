@@ -18,6 +18,9 @@
     "url": "https://github.com/lensapp/lens-extension-samples.git",
     "directory": "styling-css-modules-sample"
   },
+  "engines": {
+    "lens": "^5.0.0"
+  },
   "main": "dist/main.js",
   "renderer": "dist/renderer.js",
   "scripts": {
@@ -29,7 +32,7 @@
     "@emotion/css": "^11.0.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
-    "@k8slens/extensions": "^4.0.0-beta.3",
+    "@k8slens/extensions": "^5.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-router": "^5.1.8",

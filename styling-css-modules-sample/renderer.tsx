@@ -1,8 +1,8 @@
 import React from "react";
-import { LensRendererExtension } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import { ExampleIcon, ExamplePage } from "./page";
 
-export default class ModulesStylingExtension extends LensRendererExtension {
+export default class ModulesStylingExtension extends Renderer.LensExtension {
   clusterPages = [
     {
       id: "css-modules-styling-sample",
