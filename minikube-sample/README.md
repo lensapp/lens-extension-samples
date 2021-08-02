@@ -1,5 +1,7 @@
 # Lens "Minikube" Extension
 
+**Deprecated from Lens 5.0 as the new Catalog feature will add all clusters found in the users local kubeconfig file.**
+
 Simple Lens extension that automatically adds "minikube" workspace and cluster if minikube is installed.
 
 ## Install
