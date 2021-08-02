@@ -1,4 +1,4 @@
-import { Component, LensRendererExtension } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import React from "react";
 import { certificatesStore } from "../certificate-store";
 import { Certificate } from "../certificate"
@@ -9,12 +9,12 @@ enum sortBy {
   issuer = "issuer"
 }
 
-export class CertificatePage extends React.Component<{ extension: LensRendererExtension }> {
+export class CertificatePage extends React.Component<{ extension: Renderer.LensExtension }> {
 
   render() {
     return (
-      <Component.TabLayout>
-        <Component.KubeObjectListLayout
+      <Renderer.Component.TabLayout>
+        <Renderer.Component.KubeObjectListLayout
           className="Certicates" store={certificatesStore}
           sortingCallbacks={{
             [sortBy.name]: (certificate: Certificate) => certificate.getName(),
@@ -36,7 +36,7 @@ export class CertificatePage extends React.Component<{ extension: LensRendererEx
             certificate.spec.issuerRef.name
           ]}
         />
-      </Component.TabLayout>
+      </Renderer.Component.TabLayout>
     )
   }
 }
