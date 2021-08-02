@@ -1,6 +1,6 @@
-import { LensMainExtension } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 
-export default class EmotionStylingExtensionMain extends LensMainExtension {
+export default class EmotionStylingExtensionMain extends Renderer.LensExtension {
   onActivate() {
     console.log('styling-emotion-sample activated');
   }

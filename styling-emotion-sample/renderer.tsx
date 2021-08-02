@@ -1,8 +1,8 @@
 import React from "react";
-import { LensRendererExtension } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import { ExampleIcon, ExamplePage } from "./page";
 
-export default class EmotionStylingExtension extends LensRendererExtension {
+export default class EmotionStylingExtension extends Renderer.LensExtension {
   clusterPages = [
     {
       id: "emotion-styling-sample",
