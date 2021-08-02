@@ -1,13 +1,13 @@
-import { LensRendererExtension, Component } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import { CoffeeDoodle } from "react-open-doodles";
 import path from "path";
 import React from "react"
 
-export function ExampleIcon(props: Component.IconProps) {
-  return <Component.Icon {...props} material="pages" tooltip={path.basename(__filename)}/>
+export function ExampleIcon(props: Renderer.Component.IconProps) {
+  return <Renderer.Component.Icon {...props} material="pages" tooltip={path.basename(__filename)}/>
 }
 
-export class ExamplePage extends React.Component<{ extension: LensRendererExtension }> {
+export class ExamplePage extends React.Component<{ extension: Renderer.LensExtension }> {
   render() {
     const doodleStyle = {
       width: "200px"

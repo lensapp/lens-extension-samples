@@ -1,9 +1,9 @@
-import { LensRendererExtension, Component, K8sApi } from "@k8slens/extensions";
+import { Renderer } from "@k8slens/extensions";
 import { ExampleIcon, ExamplePage } from "./src/example-page"
 import { ExamplePodDetails } from "./src/example-pod-details"
 import React from "react"
 
-export default class ExampleExtension extends LensRendererExtension {
+export default class ExampleExtension extends Renderer.LensExtension {
   clusterPages = [
     {
       id: "hello", // hello-world:foo
@@ -29,7 +29,7 @@ export default class ExampleExtension extends LensRendererExtension {
       apiVersions: ["v1"],
       priority: 10,
       components: {
-        Details: (props: Component.KubeObjectDetailsProps<K8sApi.Pod>) => <ExamplePodDetails {...props} />
+        Details: (props: Renderer.Component.KubeObjectDetailsProps<Renderer.K8sApi.Pod>) => <ExamplePodDetails {...props} />
       }
     }
   ]
