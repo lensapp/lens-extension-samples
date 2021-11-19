@@ -1,6 +1,6 @@
-import { Renderer } from "@k8slens/extensions";
+import { Main } from "@k8slens/extensions";
 
-export default class ModulesStylingExtensionMain extends Renderer.LensExtension {
+export default class ModulesStylingExtensionMain extends Main.LensExtension {
   onActivate() {
     console.log('styling-css-modules-sample activated');
   }
