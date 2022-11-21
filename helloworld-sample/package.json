@@ -1,12 +1,16 @@
 {
   "name": "@k8slens/helloworld-sample",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Mirantis, Inc <info@k8slens.dev> (https://k8slens.dev)",
   "maintainers": [
     {
       "name": "naveenbanala",
       "email": "naveenbanala93@gmail.com"
     },
+    {
+      "name": "jlnhnng",
+      "email": "julian.hennig@gmail.com"
+    },    
     {
       "name": "k8slens-bot",
       "email": "info@k8slens.dev"
@@ -19,7 +23,7 @@
     "directory": "helloworld-sample"
   },
   "engines": {
-    "lens": "^5.0.0"
+    "lens": "^6.0.0"
   },
   "main": "dist/main.js",
   "renderer": "dist/renderer.js",
@@ -32,13 +36,13 @@
     "react-open-doodles": "^1.0.5"
   },
   "devDependencies": {
-    "@k8slens/extensions": "^5.0.0",
+    "@k8slens/extensions": "^6.1.9",
+    "@types/node": "^14.18.33",
+    "@types/react": "^17.0.26",
     "ts-loader": "^8.0.4",
-    "typescript": "^4.0.3",
-    "@types/react": "^16.9.35",
-    "@types/node": "^12.0.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.11"
+    "typescript": "^4.9.3",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.8.0"
   },
   "license": "MIT",
   "homepage": "https://github.com/lensapp/lens-extension-samples",
